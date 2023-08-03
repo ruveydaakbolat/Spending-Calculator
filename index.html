@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="heading">Spending Calculator</h1>
+    <div class="container">
+        <h3 class="greet">
+            Welcome, <input id="name-input" type="text" placeholder="Enter your name..." />
+        </h3>
+        <form>
+            <div class="double">
+                <div class="form-spending">
+                    <label>Spending:</label>
+                    <input id="spending" type="text" placeholder="Enter the product..." />
+                </div>
+                <div class="form-price">
+                    <label>Price:</label>
+                    <input id="price" type="number" placeholder="Enter the price..." />
+                </div>
+            </div>
+            <div class="double">
+                <div class="form-state">
+                    <input id="status-input" type="checkbox" />
+                    <label for="status-input">Paid</label>
+                </div>
+                <button class="add-btn">Add</button>
+            </div>
+        </form>
+
+        <!-- Total -->
+        <div class="total">
+            Total Spending: <span id="total-information">0</span> &#8378;
+        </div>
+
+        <select id="filter-select">
+            <option value="all">All</option>
+            <option value="paid">Paid</option>
+            <option value="not-paid">Not Paid</option>
+        </select>
+
+        <!-- List -->
+        <div class="list"></div>
+    </div>
+
+    <!-- js script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
